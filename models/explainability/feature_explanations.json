@@ -1,0 +1,136 @@
+{
+  "feature_names": [
+    "trip_completion_rate",
+    "avg_customer_rating",
+    "consistency_score",
+    "cancellation_rate",
+    "recent_rating_trend",
+    "monthly_earnings_usd",
+    "earning_volatility",
+    "total_trips",
+    "last_30_days_trips",
+    "recent_earnings_trend",
+    "tenure_months",
+    "feature_adoption_score",
+    "platform_activity_days_per_month",
+    "grabpay_usage_frequency",
+    "peak_hours_utilization",
+    "weekend_activity_ratio",
+    "referral_count",
+    "performance_trust",
+    "financial_behavior",
+    "platform_engagement",
+    "completion_excellence",
+    "rating_excellence",
+    "reliability_score",
+    "earnings_stability",
+    "trip_efficiency",
+    "digital_adoption"
+  ],
+  "shap_importance_xgb": {
+    "trip_completion_rate": 0.40050220489501953,
+    "avg_customer_rating": 1.8652136325836182,
+    "consistency_score": 1.8688316345214844,
+    "cancellation_rate": 0.3545153737068176,
+    "recent_rating_trend": 0.4724893271923065,
+    "monthly_earnings_usd": 2.6353423595428467,
+    "earning_volatility": 0.7945020794868469,
+    "total_trips": 7.266407012939453,
+    "last_30_days_trips": 0.5651811361312866,
+    "recent_earnings_trend": 0.274468332529068,
+    "tenure_months": 5.005092620849609,
+    "feature_adoption_score": 4.670013904571533,
+    "platform_activity_days_per_month": 2.8441805839538574,
+    "grabpay_usage_frequency": 0.4033101797103882,
+    "peak_hours_utilization": 0.44176724553108215,
+    "weekend_activity_ratio": 0.36790820956230164,
+    "referral_count": 0.7859158515930176,
+    "performance_trust": 2.342393159866333,
+    "financial_behavior": 25.699480056762695,
+    "platform_engagement": 0.38132885098457336,
+    "completion_excellence": 0.16074782609939575,
+    "rating_excellence": 0.5238330364227295,
+    "reliability_score": 0.6312560439109802,
+    "earnings_stability": 11.001677513122559,
+    "trip_efficiency": 0.7844380140304565,
+    "digital_adoption": 0.5415486693382263
+  },
+  "shap_importance_lgb": {
+    "trip_completion_rate": 0.2816670822346164,
+    "avg_customer_rating": 2.1276295938819025,
+    "consistency_score": 2.2821241263840575,
+    "cancellation_rate": 0.31170613670296754,
+    "recent_rating_trend": 0.4291940127025665,
+    "monthly_earnings_usd": 3.843671305452269,
+    "earning_volatility": 0.7978429876852963,
+    "total_trips": 8.072867730649632,
+    "last_30_days_trips": 1.7850730083688695,
+    "recent_earnings_trend": 0.23627826404511784,
+    "tenure_months": 3.6181682129068027,
+    "feature_adoption_score": 4.66629812061094,
+    "platform_activity_days_per_month": 3.179464622751007,
+    "grabpay_usage_frequency": 0.3209529924610701,
+    "peak_hours_utilization": 0.352742207780423,
+    "weekend_activity_ratio": 0.30088546377644076,
+    "referral_count": 0.2825423896025511,
+    "performance_trust": 2.3796096871748404,
+    "financial_behavior": 22.567938224125072,
+    "platform_engagement": 0.29895820548441193,
+    "completion_excellence": 0.08088910316617876,
+    "rating_excellence": 0.6661029921669495,
+    "reliability_score": 0.7076923441220228,
+    "earnings_stability": 10.995773655152734,
+    "trip_efficiency": 1.4800285210057782,
+    "digital_adoption": 0.868230846771885
+  },
+  "top_features": [
+    "trip_completion_rate",
+    "avg_customer_rating",
+    "consistency_score",
+    "cancellation_rate",
+    "recent_rating_trend",
+    "monthly_earnings_usd",
+    "earning_volatility",
+    "total_trips",
+    "last_30_days_trips",
+    "recent_earnings_trend"
+  ],
+  "model_interpretations": {
+    "performance_trust": "Measures reliability and customer satisfaction",
+    "financial_behavior": "Captures earning patterns and stability",
+    "platform_engagement": "Reflects digital adoption and loyalty"
+  },
+  "bias_monitoring": {
+    "xgb": {
+      "high_earner_avg": 636.2919311523438,
+      "low_earner_avg": 560.1489868164062,
+      "difference": 76.1429443359375
+    },
+    "lgb": {
+      "high_earner_avg": 636.4110032213005,
+      "low_earner_avg": 559.9874367474257,
+      "difference": 76.42356647387476
+    }
+  },
+  "fairness_analysis": {
+    "demographic_parity": {
+      "description": "Score distribution across different partner segments",
+      "metrics": {
+        "xgb": {
+          "high_earner_avg": 636.2919311523438,
+          "low_earner_avg": 560.1489868164062,
+          "difference": 76.1429443359375
+        },
+        "lgb": {
+          "high_earner_avg": 636.4110032213005,
+          "low_earner_avg": 559.9874367474257,
+          "difference": 76.42356647387476
+        }
+      }
+    },
+    "equal_opportunity": {
+      "description": "Equal access to loan products across segments",
+      "vehicle_loan_eligible_rate": 0.9635
+    }
+  }
+}
