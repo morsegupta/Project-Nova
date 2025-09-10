@@ -1,0 +1,19 @@
+For MacOS:
+- locate the folder using cd command
+- once inside the folder run command - chmod +x run_novascore.sh
+- then run ./run_novascore.sh
+- You will se a browser Window open, this is the dashboard
+- Now you can check API Status, when running for the first time, it might take a minute to load all the models successfully.
+
+
+For Windows:
+- locate the folder novascore_ml using cd command (since this zip is made on a MacOS, you might need to do cd novascore_ml once more)
+- once inside the folder run the command - powershell -ExecutionPolicy Bypass -File ./run_novascore.ps1
+- You will se a browser Window open, this is the dashboard
+- Now you can check API Status, when running for the first time, it might take a minute to load all the models successfully.
+
+For Linux:
+- locate the folder novascore_ml using cd command (since this zip is made on a MacOS, you might need to do cd novascore_ml once more)
+- once inside the folder run command - chmod +x run_novascore_linux.sh
+- then run ./run_novascore_linux.sh
+- Now you can check API Status, when running for the first time, it might take a minute to load all the models successfully.

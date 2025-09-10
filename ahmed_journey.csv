@@ -1,0 +1,7 @@
+month,nova_score,trip_completion_rate,avg_rating,monthly_earnings,consistency_score,total_trips
+Month 1,420,0.82,3.9,380,0.65,150
+Month 2,465,0.87,4.1,420,0.72,320
+Month 3,520,0.91,4.3,480,0.78,510
+Month 4,580,0.93,4.5,520,0.82,720
+Month 5,635,0.95,4.7,580,0.86,950
+Month 6,680,0.97,4.8,640,0.91,1200
