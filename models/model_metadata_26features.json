@@ -1,0 +1,46 @@
+{
+  "feature_count": 26,
+  "feature_names": [
+    "trip_completion_rate",
+    "avg_customer_rating",
+    "consistency_score",
+    "cancellation_rate",
+    "recent_rating_trend",
+    "monthly_earnings_usd",
+    "earning_volatility",
+    "total_trips",
+    "last_30_days_trips",
+    "recent_earnings_trend",
+    "tenure_months",
+    "feature_adoption_score",
+    "platform_activity_days_per_month",
+    "grabpay_usage_frequency",
+    "peak_hours_utilization",
+    "weekend_activity_ratio",
+    "referral_count",
+    "performance_trust",
+    "financial_behavior",
+    "platform_engagement",
+    "completion_excellence",
+    "rating_excellence",
+    "reliability_score",
+    "earnings_stability",
+    "trip_efficiency",
+    "digital_adoption"
+  ],
+  "model_performance": {
+    "xgb_r2": 0.9352527260780334,
+    "xgb_rmse": 15.916139177832198,
+    "lgb_r2": 0.9360933301940585,
+    "lgb_rmse": 15.812483508537145,
+    "ensemble_r2": 0.9365174303809211,
+    "ensemble_rmse": 15.759928430240283
+  },
+  "ensemble_weights": {
+    "xgb": 0.4,
+    "lgb": 0.4,
+    "nn": 0.2
+  },
+  "training_date": "2025-09-03T19:41:18.765513",
+  "unified_features": true
+}
